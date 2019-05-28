@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modern Web applications </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <button onclick= usingFetch();> Fetch</button>
+        <button>Asyn Await</button>
+        <button>React</button>
+        
+    </body>
+    <script> 
+            function usingFetch(){
+                
+          fetch("https://randomuser.me/api/")
+           .then(function(result){
+              console.log(result.json());
+ 
+             
+           })
+         //    .then(function(data){
+         //    console.log(data.name);
+         //    console.log(data.location);
+         //    })
+           ;
+         };
+         </script> 
+</html>
