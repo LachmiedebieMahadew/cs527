@@ -4,28 +4,15 @@
         <title>Modern Web applications </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script> 
+        <script src="../javaScript/Day1Exercise2.js"></script>
     </head>
     <body>
-        <button onclick= usingFetch();> Fetch</button>
-        <button>Asyn Await</button>
-        <button>React</button>
+        <button id="promise"> Fetch</button>
+        <button id="asynAwait">Asyn Await</button>
+        <button id="reactive">Reactive</button>
         
     </body>
-    <script> 
-            function usingFetch(){
-                
-          fetch("https://randomuser.me/api/")
-           .then(function(result){
-              console.log(result.json());
  
-             
-           })
-         //    .then(function(data){
-         //    console.log(data.name);
-         //    console.log(data.location);
-         //    })
-           ;
-         };
-         </script> 
 </html>
