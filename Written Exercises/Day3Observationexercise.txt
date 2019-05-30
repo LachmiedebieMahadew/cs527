@@ -1,0 +1,35 @@
+Initial Performance:
+Ram:1GB
+Cpu:2%
+
+Using readFileSync
+1 request 
+Ram:5.4GB
+Cpu:39%
+
+2 requests
+Ram:6.8GB
+Cpu:74%
+
+delay time before running is 3 seconds
+
+Using readFile
+1 request
+Ram:5.2GB
+Cpu:30%
+
+2requests
+Ram:7.1GB
+Cpu:67%
+delay 1second
+
+Using Streams
+1 request:
+Ram:2.5GB
+Cpu:15%
+
+2 requests
+Ram:2.6GB
+Cpu:26%
+No delay using streams.
+
