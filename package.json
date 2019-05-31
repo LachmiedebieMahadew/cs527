@@ -1,0 +1,24 @@
+{
+  "name": "cs527",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "rxjs": "^6.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LachmiedebieMahadew/cs527.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LachmiedebieMahadew/cs527/issues"
+  },
+  "homepage": "https://github.com/LachmiedebieMahadew/cs527#readme"
+}
