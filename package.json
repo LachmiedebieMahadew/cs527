@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
     "moment": "^2.24.0",
     "rxjs": "^6.5.2"
   },
@@ -20,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/LachmiedebieMahadew/cs527/issues"
   },
-  "homepage": "https://github.com/LachmiedebieMahadew/cs527#readme"
+  "homepage": "https://github.com/LachmiedebieMahadew/cs527#readme",
+  "keywords": []
 }
