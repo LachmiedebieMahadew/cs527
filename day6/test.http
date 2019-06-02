@@ -1,0 +1,26 @@
+POST http://localhost:3000/grades HTTP/1.1
+content-type: application/json
+
+{
+    "name": "asaad saad",
+    "course": "CS572",
+    "grade": "95"
+}
+
+###
+GET http://localhost:3000/grades HTTP/1.1
+
+###
+GET http://localhost:3000/grades/1 HTTP/1.1
+
+###
+PUT http://localhost:3000/grades/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "saad asaad",
+    "course": "CS572"
+}
+
+###
+DELETE http://localhost:3000/grades/3 HTTP/1.1
