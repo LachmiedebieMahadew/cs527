@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var validateJSON = require('../JSONValidator');
 
 let grades = [];
 let index = 0;
@@ -20,7 +21,7 @@ if(found){
 }
 });
 
-router.post('/', function(req,res,next){
+router.post('/',validateJSON, function(req,res,next){
 let receivedGrade = req.body;
 let newGrade = {
   id: ++index,
@@ -32,7 +33,7 @@ grades.push(newGrade);
 res.status(201).json({status:"ok"});
 });
 
-router.put('/:id', function(req,res,next){
+router.put('/:id', validateJSON,function(req,res,next){
   try{
     let found = grades.some(x => x.id === parseInt(req.params.id));
 if(found){
