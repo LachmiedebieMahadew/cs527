@@ -1,0 +1,29 @@
+POST http://localhost:3000/lectures HTTP/1.1
+content-type: application/json
+
+{
+    "course": "CS427",
+    "lecture": "02"
+}
+###
+GET http://localhost:3000/lectures HTTP/1.1
+
+###
+GET http://localhost:3000/lectures/cs572 HTTP/1.1
+
+###
+GET http://localhost:3000/lectures/cs427 HTTP/1.1
+
+###
+DELETE  http://localhost:3000/lectures/cs572 HTTP/1.1
+
+###
+PUT   http://localhost:3000/lectures/cs427 HTTP/1.1
+content-type: application/json
+
+{
+    "course": "CS572",
+    "lecture": "04"
+}
+###
+GET    http://localhost:3000/lectures/search/cs HTTP/1.1
