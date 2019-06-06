@@ -3,7 +3,7 @@ var router = express.Router();
 var connect = require('./../mongoconnect');
 
 
-/* GET users listing. */
+/* GET lectures listing. */
 router.get('/', connect, async (req, res, next) => {
   const doc = await req.DB.collection('lectures').find({}).toArray();
   res.status(200).json({ status: 'ok', data: doc });

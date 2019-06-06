@@ -1,0 +1,24 @@
+POST http://localhost:3000/geolocation HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Pizza Ranch",
+    "category":"Buffet restaurant",
+    "location":[-91.977105,41.007008]
+}
+###
+GET http://localhost:3000/geolocation HTTP/1.1
+
+###
+GET http://localhost:3000/geolocation/-91.967312/41.022695 HTTP/1.1
+
+####
+POST http://localhost:3000/geolocation HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Dollar Tree",
+    "category":"Dollar store",
+    "location":[-91.969717,41.007048]
+}
+###
