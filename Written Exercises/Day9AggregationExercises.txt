@@ -1,0 +1,6 @@
+day 9 Exercise
+
+1. db.zipcodes.aggregate([ {$match:{ state:"WA"}}]).pretty()
+2.db.zipcodes.aggregate([{$match:{pop:{$lt:5000}}}]).pretty()
+3.db.zipcodes.aggregate([{ $group:{_id:{ state:'$state', city:'$city'}, number_zipCodes:{$sum:1}}},{$match:{ number_zipCodes:{$gt:1}}}, {$sort:{ _id:1}}]).pretty()
+4.db.zipcodes.aggregate([{ $group:{_id:{ state:'$state', city:'$city'}, population:{$sum:'$pop'}}}, {$sort:{"population":1,"_id.state":1}},{$group:{_id:'$_id.state', city:{$first:'$_id.city'},population:{$first:'$population'}}}])
