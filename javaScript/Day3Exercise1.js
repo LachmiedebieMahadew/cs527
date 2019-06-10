@@ -1,6 +1,6 @@
 /* Exercise 1. Create a node script that converts www.mum.edu domain name to the equavalent Ip address.
  */
-
+/*
  const dns=require('dns');
  const util= require('util');
  //dns.resolve4('www.mum.edu', (error, data) => {console.log(data)});
@@ -13,3 +13,16 @@
  }
 
  myResolver();
+*/
+
+
+ const dns= require('dns');
+ const util= require('util');
+
+const promiseResolver= util.promisify(dns.resolve4);
+
+ let myresolver=async ()=>{
+ const result =await promiseResolver('www.mum.edu')
+ console.log(result);
+}
+myresolver();

@@ -19,4 +19,6 @@ let gym = new Gym();
 gym.on('Boom', function(){console.log("Athlete is working out")});
     setInterval( () => gym.emit('Boom'),1000);
 
-// module.exports= Gym;
+module.exports= Gym;
+
+
